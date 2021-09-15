@@ -2,16 +2,12 @@
 # ###########################################
 # SCRIPT : DOWNLOAD AND INSTALL JEDIEPGEXTRAM
 # ###########################################
-#
-# Command: wget https://raw.githubusercontent.com/emilnabil/jediepgextream/main/installer.sh -qO - | /bin/sh
-#
 # ###########################################
-
-###########################################
+echo " **********************************************************************************************************"
 # Configure where we can find things here #
 TMPDIR='/tmp'
 PACKAGE='enigma2-plugin-extensions-jediepgxtream'
-MY_URL='https://raw.githubusercontent.com/emilnabil/jediepgextream/main/'
+MY_URL='https://raw.githubusercontent.com/sayedshaabn/jediepgextream/main/'
 
 ####################
 #  Image Checking  #
@@ -27,11 +23,11 @@ fi
 if python --version 2>&1 | grep -q '^Python 3\.'; then
     echo ":You have Python3 image ..."
     sleep 1; clear
-    VERSION='1.3'
+    VERSION='2.3'
 else
     echo ":You have Python2 image ..."
     sleep 1; clear
-    VERSION='1.3'
+    VERSION='2.3'
 fi
 
 ##################################
@@ -75,9 +71,11 @@ echo "***********************************************************************"
 echo "**                                                                    *"
 echo "**                       jediepgextream     : $VERSION                             *"
 ####                     Uploaded by: MOHAMED_OS                      ###
-###    EDIT SCRIPT BY:EMIL_NABIL TO WORK WITH PLUGIN JEDIEPGEXTRAM ###
+###               EDIT SCRIPT BY:EMIL_NABIL TO WORK WITH PLUGIN JEDIEPGEXTRAM ###
 echo "**                                                                    *"
 echo "***********************************************************************"
-echo ""
-
+echo "              restarting enigma "
+wait 1
+init 4
+init 3
 exit 0
