@@ -2,6 +2,8 @@
 # ###########################################
 # SCRIPT : DOWNLOAD AND INSTALL JEDIEPGEXTRAM
 # ###########################################
+#
+# Command: wget https://raw.githubusercontent.com/emilnabil/jediepgextream/main/installer.sh -qO - | /bin/sh ###########################################
 # ###########################################
 echo " **********************************************************************************************************"
 # Configure where we can find things here #
